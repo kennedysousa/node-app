@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "<username>",
+    "password": "<dev-password>",
+    "database": "<dev-database>",
+    "host": "<dev-hostname>",
+    "dialect": "mysql",
+    "operatorsAliases": "false"
+  },
+  "test": {
+    "username": "<username>",
+    "password": "<test-password>",
+    "database": "<test-database>",
+    "host": "<test-hostname>",
+    "dialect": "mysql",
+    "operatorsAliases": "false"
+  },
+  "production": {
+    "username": "<username>",
+    "password": "<prd-password>",
+    "database": "<prd-database>",
+    "host": "<prd-hostname>",
+    "dialect": "mysql",
+    "operatorsAliases": "false"
+  }
+}
