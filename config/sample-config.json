@@ -5,7 +5,8 @@
     "database": "<dev-database>",
     "host": "<dev-hostname>",
     "dialect": "mysql",
-    "operatorsAliases": "false"
+    "operatorsAliases": "false",
+    "secret-app": "<dev-secret-app>"
   },
   "test": {
     "username": "<username>",
@@ -13,7 +14,8 @@
     "database": "<test-database>",
     "host": "<test-hostname>",
     "dialect": "mysql",
-    "operatorsAliases": "false"
+    "operatorsAliases": "false",
+    "secret-app": "<test-secret-app>"
   },
   "production": {
     "username": "<username>",
@@ -21,6 +23,7 @@
     "database": "<prd-database>",
     "host": "<prd-hostname>",
     "dialect": "mysql",
-    "operatorsAliases": "false"
+    "operatorsAliases": "false",
+    "secret-app": "<prd-secret-app>"
   }
 }
