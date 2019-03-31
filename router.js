@@ -3,6 +3,7 @@ const paginate = require('express-paginate');
 const router = express.Router();
 const Authentication = require('./controllers/authentication');
 const users = require('./controllers/users');
+const actors = require('./controllers/actors');
 const passportService = require('./services/passport');
 const passport = require('passport');
 
@@ -20,7 +21,9 @@ router.post('/signin', requireSignin, Authentication.signin);
 // keep this before all routes that will use pagination
 router.use(paginate.middleware(50, 100));
 
-router.get('/api/v1/users', requireAuth, users.getUsers);
+//router.get('/api/v1/users', requireAuth, users.getUsers);
+router.get('/api/v1/users', users.getUsers);
+router.get('/api/v1/actors', actors.getActors);
 
 router.get('/', requireAuth, function(req, res) {
     res.send({ hi: 'there' });
